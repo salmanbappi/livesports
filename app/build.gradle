@@ -16,8 +16,8 @@ android {
         applicationId = "eu.kanade.tachiyomi.animeextension.all.livesports"
         minSdk = 21
         targetSdk = 34
-        versionCode ext.extVersionCode
-        versionName "14.0." + ext.extVersionCode
+        versionCode extVersionCode
+        versionName "14.0." + extVersionCode
 
         manifestPlaceholders = [
             appName: "Live Sports",
