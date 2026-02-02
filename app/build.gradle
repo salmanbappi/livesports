@@ -5,7 +5,7 @@ plugins {
 }
 
 ext {
-    extVersionCode = 2
+    extVersionCode = 1000
 }
 
 android {
@@ -17,7 +17,7 @@ android {
         minSdk = 21
         targetSdk = 34
         versionCode ext.extVersionCode
-        versionName "1.0." + ext.extVersionCode
+        versionName "14.0." + ext.extVersionCode
 
         manifestPlaceholders = [
             appName: "Live Sports",
