@@ -64,7 +64,7 @@ class LiveSports : Source(), ConfigurableAnimeSource {
     override suspend fun getSearchAnime(page: Int, query: String, filters: AnimeFilterList): AnimesPage {
         val all = getPopularAnime(1)
         if (query.isBlank()) return all
-        val filtered = all.animeList.filter { it.title.contains(query, ignoreCase = true) }
+        val filtered = all.animes.filter { it.title.contains(query, ignoreCase = true) }
         return AnimesPage(filtered, false)
     }
 
